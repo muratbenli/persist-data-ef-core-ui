@@ -1,17 +1,9 @@
-import React, { useEffect } from 'react';
-const axios = require('axios').default;
+import React from 'react';
+import OrdersList from './OrdersList';
 
 const Order = () => {
 
-    useEffect(() => {
-        axios.get("/orders").then((res) => {
-            console.log(res);
-        });
-    })
-
-    return (
-        <div>Order</div>
-    );
+    return <OrdersList />
 }
 
 export default Order;
